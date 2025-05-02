@@ -1,0 +1,122 @@
+.topbar {
+  min-width: 100vw;
+  height: 80px;
+  border-bottom: var(--border);
+  background-color: var(--white);
+}
+
+.topbar .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .wrapper .wrapper-left {
+  height: 100%;
+  width: 350px;
+  display: flex;
+  align-items: row;
+  justify-content: center;
+}
+
+.topbar .wrapper .wrapper-left .menu-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 1.5rem 0 2.5rem;
+}
+
+.topbar .wrapper .wrapper-left .search-wrapper {
+  height: 100%;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+}
+
+.topbar .wrapper .wrapper-left .search-wrapper .search-icon {
+  position: absolute;
+  color: rgb(95, 95, 95);
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.topbar .wrapper .wrapper-left .search-wrapper .searchInput {
+  height: 2.5rem;
+  max-width: 150px;
+  border: var(--border);
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--bg-light);
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  transition: max-width 0.3s ease-in-out;
+}
+
+.topbar .wrapper .wrapper-left .search-wrapper .searchInput:focus {
+  max-width: 250px;
+  border-color: rgb(95, 95, 95);
+}
+
+.topbar .wrapper .wrapper-left .search-wrapper .searchInput::placeholder {
+  color: var(--bg-dark);
+  font-size: 1.1rem;
+}
+
+.topbar .wrapper .wrapper-mid {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar .wrapper .wrapper-mid .title-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar .wrapper .wrapper-mid .title {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.topbar .wrapper .wrapper-right {
+  height: 100%;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.topbar .wrapper .wrapper-right .nav-icons {
+  height: 100%;
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 2.5rem 0 0;
+}
+
+.menu-icon,
+.profile-icon,
+.cart-icon,
+.heart-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.search-icon:hover,
+.menu-icon:hover,
+.profile-icon:hover,
+.cart-icon:hover,
+.heart-icon:hover {
+  color: var(--bg-dark);
+}

@@ -1,0 +1,25 @@
+.sidebar {
+  min-height: 100vh;
+  width: 300px;
+  background-color: rgb(237, 237, 237);
+  border-right: var(--border);
+}
+
+.sidebar .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .wrapper .top {
+  height: 60px;
+  border-bottom: var(--border);
+}
+
+.sidebar .wrapper .center {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .wrapper .bottom {
+  display: flex;
+}
